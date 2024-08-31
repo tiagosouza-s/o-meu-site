@@ -14,9 +14,8 @@ body {
 nav{
     display: flex;
     justify-content: space-between;
-    
     padding: 20px;
-    max-width: 600px;
+    max-width: 1000px;
     margin: 0 auto;
 
 }
@@ -29,12 +28,30 @@ nav ul {
 }
 
 
+
 nav ul li a {
     color: #FAFAFA;
     text-decoration: none;
     padding: 10px 20px;
     font-size: 18px;
-   
+}
+
+main{
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+ h1{
+    font-size: 32px;
+    margin-left: 20px;
+}
+
+p{
+    margin-left: 20px;
+}
+
+.logo{
+    padding: 0;  
 }
 
 .menu-toggle {
@@ -44,13 +61,11 @@ nav ul li a {
         
 }
 
-
 .menu-toggle .bar {
     background-color: #FAFAFA;
     height: 3px;
     width: 25px;
-    margin: 5px 0;  
-   
+    margin: 5px 0;    
 }
 
 /* Estilos para telas menores */
@@ -58,49 +73,49 @@ nav ul li a {
     nav ul {
         display: none;
         flex-direction: column;
-        width: 100%;
-        
+        width: 100%;   
     }
 
     nav ul.active {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        
-    
-    }
-
-    nav ul li {
-        margin: 0;
-       
-     
-        
+        justify-content: center;   
     }
 
     .menu-toggle {
         display: flex;
         margin-left:20px
-
-
     }
+
     nav{
         padding: 10px;
-        align-items: center;
-       
-        
+        align-items: center;           
     }
+
     nav ul li a{
-        color: #FAFAFA;
-        
-        
+        color: #FAFAFA;        
     }
     
 }
 
 /*Estilo Hover*/
-
 nav ul li a:hover{
     background-color:#27272A;
-    border-radius: 10px;
-   
+    border-radius: 10px;   
 }
+
+.logo:hover{
+    background-color: #09090B;
+}
+
+/* estilos Especiais Index.html */
+.descricao-page{
+    margin: 50px auto;
+}
+
+.descricao-page h1{
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+
