@@ -52,7 +52,7 @@ h2, h3, h4, p{
 }
 
 img{
-    width: 50px;
+    width: 200px
 
 }
 
@@ -77,39 +77,12 @@ img{
 section{
     margin-top: 30px;
 }
-/* Estilos para telas menores */
-@media (max-width: 600px) {
-    nav ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;   
-    }
 
-    nav ul.active {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;   
-    }
 
-    .menu-toggle {
-        display: flex;
-        margin-left:20px
-    }
 
-    nav{
-        padding: 10px;
-        align-items: center;           
-    }
+ 
 
-    nav ul li a{
-        color: #FAFAFA;        
-    }
-    
-    .redes-sociais{
-        padding-left: 120px;
-    }
-    
-}
+
 
 /*Estilo Hover*/
 nav ul li a:hover{
@@ -141,17 +114,76 @@ button {
     
 }
 
-/* Estilos para telas menores Index */
-@media (max-width: 650px){
-    button{
-        width: 500px;        
+.card{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    margin: 30px auto 20px auto;
+    padding: 5px;
+    
+}
+
+
+.container{
+    margin-bottom: 20px;
+}
+
+
+ /* Estilos para telas menores */
+@media (max-width:700px){
+    .card{
+        display:flex;
+        justify-content: space-around
+        
     }
+}
+@media (max-width: 600px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;   
+    }
+
+    nav ul.active {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;   
+    }
+
+    .menu-toggle {
+        display: flex;
+        margin-left:20px
+    }
+
+    nav{
+        padding: 10px;
+        align-items: center;           
+    }
+
+    nav ul li a{
+        color: #FAFAFA;        
+    }
+    
+    .redes-sociais{
+        padding-left: 120px;
+    }
+
+    h1,h2,h3,p,h4{
+        text-align: center
+    }
+
+    
     .descricao-page h1{
         font-size: 42px;
     }
+    img{
+        width: 400px;
+    }
+
+    .card{
+        display: flex;
+        justify-content: center;
+    }
+
 }
 
-@media (max-width: 400px){
-    button{width: 350px;
-}
-}
