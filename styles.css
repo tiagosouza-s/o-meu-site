@@ -51,13 +51,10 @@ p,h2, img,.redes-sociais,h1{
     margin-left: 28px;
 }
 
-h4, .container p{
-    text-align: center;
-}
-
-
 img{
-    width: 200px
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
 
 }
 
@@ -83,16 +80,6 @@ section{
     margin-top: 30px;
 }
 
-/*Estilo Hover*/
-nav ul li a:hover{
-    background-color:#27272A;
-    border-radius: 10px;   
-}
-
-.logo:hover{
-    background-color: #09090B;
-}
-
 /* estilos Especiais Index.html */
 .descricao-page{
     margin: 50px auto;
@@ -102,6 +89,7 @@ nav ul li a:hover{
     font-size: 52px;
     margin-bottom: 20px;
 }
+
 /* Estilos padrão para os botões */
 .redes-sociais {
     display: flex;
@@ -117,23 +105,50 @@ nav ul li a:hover{
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-size: 16px;  
+    font-style: italic;
+    color: #09090B ;
 }
 
-
+/* Estilos padrão para os card */
 .card{
     display: flex;
-    justify-content:space-between;
+    justify-content:flex-start;
     flex-wrap: wrap;
-    margin: 30px auto 20px auto;
-    padding: 5px;
-    
+    margin: 30px auto 20px 20px;
+    padding: 5px;  
 }
-
-
 .container{
-    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+.container p{
+    text-align: center;
+    margin: 0;
+    padding-top: 5px;
+    color: #27272A;
+}
+.container a{
+    text-decoration: none;
+}
+.card-1 a img{
+    margin: 0;
 }
 
+/*Estilo Hover*/
+nav ul li a:hover{ /*Hover menu*/
+    background-color:#27272A;
+    border-radius: 10px;   
+}
+.logo:hover{ 
+    background-color: #09090B;
+}
+img:hover{
+    padding: 2px;
+}
+.social-button:hover{
+    background-color: #FFC83D;
+    color: #27272A;
+}
 
  /* Estilos para telas menores */
 @media (max-width:830px){
@@ -142,61 +157,54 @@ nav ul li a:hover{
     }
     .redes-sociais { /*Estilos telas menores Button*/
         margin: 10px;
-    }
-    
-    
+    }  
 }
+
 @media (max-width:700px){
     {
         margin-left: 20px;
     }
     .card{
         display:flex;
-        justify-content: space-around   
-    }
-   
-    
-    
+        justify-content:flex-start ;  
+    }   
 }
 @media (max-width: 600px) {
-    nav ul { /*Estilos telas menores Menu*/
+    img{
+        width: 300px;
+        height: 250px;
+    }
+   /* nav ul { /*Estilos telas menores Menu
         display: none;
         flex-direction: column;
         width: 100%;   
-    }
-
+    }*/
     nav ul.active {
         display: flex;
         flex-direction: row;
         justify-content: center;   
     }
-
     .menu-toggle {
         display: flex;
         margin-left:20px
     }
-
-    nav{
+    /*nav{
         padding: 10px;
         align-items: center;           
-    }
+    }*/
 
     nav ul li a{
         color: #FAFAFA;        
     }
-    
     h1,h2,h3,p,h4{
         text-align: center
     }
-
-    
     .descricao-page h1{
         font-size: 36px;
     }
     img{
         width: 400px;
     }
-
     .card{
         display: flex;
         justify-content: center;
@@ -230,6 +238,4 @@ nav ul li a:hover{
    h2{
         font-size: 20px;
     }
-    
-    
 }
