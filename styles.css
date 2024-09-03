@@ -52,8 +52,9 @@ p,h2, img,.redes-sociais,h1{
 }
 
 img{
-    width: 200px;
-    height: 150px;
+    width: 100%;
+    height: auto;
+    max-width: 200px;
     border-radius: 10px;
 
 }
@@ -151,19 +152,12 @@ img:hover{
 }
 
  /* Estilos para telas menores */
-@media (max-width:700px){
-    {
-        margin-left: 20px;
-    }
-    .card{
-        display:flex;
-        justify-content:flex-start ;  
-    }   
-}
-@media (max-width: 600px) {
+
+@media (max-width: 700px) {
     img{
-        width: 300px;
-        height: 250px;
+        width: 50%;
+        height: auto;
+        max-width: 300px;
     }
    nav ul { /*Estilos telas menores Menu*/
         display: none;
@@ -219,9 +213,6 @@ img:hover{
     }
     .descricao-page p{
         font-size: 14px;
-    }
-    .redes-sociais { /*Estilos telas menores Button*/
-        margin: 10px;
     }
     .social-button{
         width: 300px;
