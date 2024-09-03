@@ -38,7 +38,7 @@ nav ul li a {
 
 main{
     max-width: 1000px;
-    margin: 20px auto;
+    margin: 0 auto;
     
 }
 
@@ -59,7 +59,7 @@ img{
 }
 
 .logo{
-    padding: 0;  
+   margin: 0 auto;  
 }
 
 .menu-toggle {
@@ -114,13 +114,11 @@ section{
     display: flex;
     justify-content:flex-start;
     flex-wrap: wrap;
-    margin-top: 20px;
     padding: 5px;  
-    
 }
 
 .card-1{
-    margin-left: 20px;
+    margin: 20px;
 }
 .container{
     text-align: center;
@@ -156,6 +154,7 @@ img:hover{
 }
 
  /* Estilos para telas menores */
+
 @media (max-width: 700px) {
     img{
         width: 300px;
@@ -190,11 +189,16 @@ img:hover{
         font-size: 36px;
     }
     img{
-        width: 400px;
+        width: 350px;
     }
     .card{
         display: flex;
         justify-content: center;
+        background-color: #FFC83D;
+    }
+
+    .card-1{
+        padding-left: 20px;
     }
 
     .redes-sociais { /*Estilos telas menores Button*/
@@ -206,23 +210,6 @@ img:hover{
     .social-button{
         display: flex;
         justify-content: center;
-    }   
-}
-
-/*@media (max-width: 400px){
-    .descricao-page h1{
-        font-size: 28px;
-    }
-    .descricao-page p{
-        font-size: 14px;
-    }
-    .redes-sociais { /*Estilos telas menores Button
-        margin: 10px;
-    }
-    .social-button{
         width: 300px;
-    }
-   h2{
-        font-size: 20px;
-    }
+    }   
 }
