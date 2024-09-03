@@ -38,7 +38,7 @@ nav ul li a {
 
 main{
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 20px auto;
     
 }
 
@@ -59,7 +59,7 @@ img{
 }
 
 .logo{
-   margin: 0 auto;  
+    padding: 0;  
 }
 
 .menu-toggle {
@@ -114,11 +114,8 @@ section{
     display: flex;
     justify-content:flex-start;
     flex-wrap: wrap;
+    margin: 30px auto 20px 20px;
     padding: 5px;  
-}
-
-.card-1{
-    margin: 20px;
 }
 .container{
     text-align: center;
@@ -154,17 +151,25 @@ img:hover{
 }
 
  /* Estilos para telas menores */
-
-@media (max-width: 700px) {
+@media (max-width:700px){
+    {
+        margin-left: 20px;
+    }
+    .card{
+        display:flex;
+        justify-content:flex-start ;  
+    }   
+}
+@media (max-width: 600px) {
     img{
         width: 300px;
         height: 250px;
     }
-   /* nav ul { /*Estilos telas menores Menu
+   nav ul { /*Estilos telas menores Menu*/
         display: none;
         flex-direction: column;
         width: 100%;   
-    }*/
+    }
     nav ul.active {
         display: flex;
         flex-direction: row;
@@ -174,10 +179,10 @@ img:hover{
         display: flex;
         margin-left:20px
     }
-    /*nav{
+    nav{
         padding: 10px;
         align-items: center;           
-    }*/
+    }
 
     nav ul li a{
         color: #FAFAFA;        
@@ -189,16 +194,11 @@ img:hover{
         font-size: 36px;
     }
     img{
-        width: 350px;
+        width: 400px;
     }
     .card{
         display: flex;
         justify-content: center;
-        background-color: #FFC83D;
-    }
-
-    .card-1{
-        padding-left: 20px;
     }
 
     .redes-sociais { /*Estilos telas menores Button*/
@@ -210,6 +210,23 @@ img:hover{
     .social-button{
         display: flex;
         justify-content: center;
-        width: 300px;
     }   
+}
+
+@media (max-width: 400px){
+    .descricao-page h1{
+        font-size: 28px;
+    }
+    .descricao-page p{
+        font-size: 14px;
+    }
+    .redes-sociais { /*Estilos telas menores Button*/
+        margin: 10px;
+    }
+    .social-button{
+        width: 300px;
+    }
+   h2{
+        font-size: 20px;
+    }
 }
