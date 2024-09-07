@@ -137,24 +137,84 @@ section{
 .card-1 a img{
     margin: 0;
 }
+/*Estilo Footer*/
 
+footer{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 90%;
+    max-width: 1000px;
+    border: 1px solid #27272A;
+    border-radius: 10px;
+}
+
+footer .container{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer a{
+    color: #FAFAFA;
+    font-size: 22px;
+    border-radius: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    transition: background 0.2s;
+    border-radius: 50%;
+}
+
+footer li{
+    list-style: none;
+}
+
+.copy{
+    border-top: 1px solid #27272A ;
+    padding: 10px;
+}
+
+
+.copy p{
+    color: #FAFAFA;
+    text-align: center;
+    margin: 0;
+    
+     
+}
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+   
+}
 /*Estilo Hover*/
 nav ul li a:hover{ /*Hover menu*/
-    background-color:#27272A;
+    background-color:#FFC83D;
     border-radius: 10px;   
+    color: #27272A;
 }
 .logo:hover{ 
-    background-color: #09090B;
+    background-color: #FFC83D;
 }
 img:hover{
     padding: 2px;
+    
 }
 .social-button:hover{
     background-color: #FFC83D;
-    color: #27272A;
+    
+}
+footer a:hover{/*Footer Redes Sociais */
+    background-color: #FFC83D;
+    color:#27272A ;
 }
 
- /* Estilos para telas menores */
+/* Estilos para telas menores */
 
 @media (max-width: 700px) {
     
@@ -240,4 +300,5 @@ img:hover{
         margin-bottom: 10px;
     }
 
+}
     
